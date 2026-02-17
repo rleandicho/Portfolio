@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  text-align: left;
+  text-align: center;
 }
 
 .header h1 {
@@ -40,8 +40,14 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
+.title_text {
+  text-align: center;
+}
+
 .tiles-container {
   display: flex;
+  align-items: center;
+  align-content: center;
   gap: 15px; 
 }
 

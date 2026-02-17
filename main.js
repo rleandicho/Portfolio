@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const rotatingTextElement = document.getElementById('rotating_text');
 
     const textOptions = [
-        "Engineering Student",
-        "TFT Connoseiur"
+        "Zendesk Specialist",
+        "Gaming Connoseiur"
     ];
 
     let currentIndex = 0;
