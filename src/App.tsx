@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-   const textOptions = ['Zendesk Specialist', 'Gaming Connoseiur'];
+  const textOptions = ['Zendesk Specialist', 'Gaming Enthusiast'];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -39,17 +39,38 @@ function App() {
       </div>
 
       <div className="bio">
-        <h2>
-          I am a Technical operations professional with 8+ years of experience bridging the gap
-          between customer needs and platform scalability. <br />
-          <br />
-          Currently serving as an acting Support Platform Owner at SteelSeries, specializing in the
-          architectural optimization of Zendesk and internal tooling.
-        </h2>
+        <h2>About Me</h2>
+        <h3>
+          CX specialist and aspiring support platform owner focused on bridging the gap between customer needs 
+          and the tools teams rely on. I’ve spent 8+ years in technical operations, working with Zendesk, HTML/CSS, 
+          JavaScript, React, Jira, and Wrike to design scalable, intuitive support experiences.
+        </h3>
       </div>
 
+      <section className="experience">
+        <h2>Experience & Impact</h2>
+        <div className="experience-item">
+          <h3>Senior Customer Success Specialist · SteelSeries</h3>
+          <p className="experience-meta">Customer Experience · Zendesk Platform</p>
+          <ul>
+            <li>
+              Lead optimization of the global Zendesk instance, aligning workflows with both
+              customer needs and internal scalability.
+            </li>
+            <li>
+              Partner with operations, product, and engineering teams to design support flows that
+              reduce friction and improve time to resolution.
+            </li>
+            <li>
+              Continuously analyze support data to identify opportunities for automation and
+              proactive support.
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <div className="title_text">
-        <h1>Personal Projects</h1>
+        <h2>Featured Projects</h2>
       </div>
 
       <div className="tiles-container">
@@ -83,34 +104,12 @@ function App() {
         </div>
       </div>
 
-      <section className="experience">
-        <h2>Experience & Impact</h2>
-        <div className="experience-item">
-          <h3>Senior Customer Success Specialist · SteelSeries</h3>
-          <p className="experience-meta">Customer Experience · Zendesk Platform</p>
-          <ul>
-            <li>
-              Lead optimization of the global Zendesk instance, aligning workflows with both
-              customer needs and internal scalability.
-            </li>
-            <li>
-              Partner with operations, product, and engineering teams to design support flows that
-              reduce friction and improve time to resolution.
-            </li>
-            <li>
-              Continuously analyze support data to identify opportunities for automation and
-              proactive support.
-            </li>
-          </ul>
-        </div>
-      </section>
-
       <section className="socials">
         <h2>Connect With Me</h2>
         <div className="social-links">
           {/* GitHub */}
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/rleandicho"
             className="social-link"
             target="_blank"
             rel="noreferrer"
@@ -137,7 +136,7 @@ function App() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/your-linkedin-slug"
+            href="https://www.linkedin.com/in/randy-leandicho"
             className="social-link"
             target="_blank"
             rel="noreferrer"
@@ -154,6 +153,21 @@ function App() {
               </svg>
             </span>
             <span className="social-text">LinkedIn</span>
+          </a>
+          
+          <a
+            href="mailto:leandicho.randy@gmail.com"
+            className="social-link social-link--email"
+          >
+            <span className="social-icon" aria-hidden="true">
+              {/* Simple mail icon */}
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 2v.2l9 5.4 9-5.4V6H3zm0 3.8V19h18V9.8l-8.55 5.13a1 1 0 0 1-1.02 0L3 9.8z"
+                />
+              </svg>
+            </span>
+            <span className="social-text">Email</span>
           </a>
         </div>
       </section>
